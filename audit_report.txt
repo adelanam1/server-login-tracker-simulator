@@ -1,0 +1,31 @@
+==== CLIENT SERVER AUDIT REPORT ====
+Generated on: 2025-02-14 02:40:39
+
+**Failed Logins:**
+
+       Timestamp Employee_ID Employee_Role Action Client_ID Client_Name Client_Email Hashed_Password File_Accessed   IP_Address Status
+2025-02-14 09:10      mbrown    IT_Support  Login         -           -            -               -             - 192.168.1.12 Failed
+2025-02-14 09:15      mbrown    IT_Support  Login         -           -            -               -             - 192.168.1.12 Failed
+
+**Successful Logins:**
+
+       Timestamp Employee_ID Employee_Role Action Client_ID Client_Name Client_Email Hashed_Password File_Accessed   IP_Address  Status
+2025-02-14 08:30        jdoe      IT_Admin  Login         -           -            -               -             - 192.168.1.10 Success
+2025-02-14 10:00     cgarcia   IT_Security  Login         -           -            -               -             - 192.168.1.15 Success
+
+**File Access Logs:**
+
+       Timestamp Employee_ID Employee_Role   Action Client_ID  Client_Name         Client_Email Hashed_Password            File_Accessed   IP_Address  Status
+2025-02-14 08:35        jdoe      IT_Admin Accessed      1001   John Smith   john.smith@xyz.com    a8f7d6b5c3e2     Client_Contracts.pdf 192.168.1.10 Success
+2025-02-14 08:50      asmith    HR_Manager Accessed      1002 Emily Carter emily.carter@abc.com    5f4d3c2b1a9e    Employee_Records.xlsx 192.168.1.11 Success
+2025-02-14 09:20     lwilson  Finance_Team Accessed      1003  Michael Lee  michael.lee@qwe.com    1d2e3f4g5h6i Financial_Statements.csv 192.168.1.13 Success
+2025-02-14 09:45     kthomas      IT_Admin Accessed      1004    Sarah Kim    sarah.kim@lmn.com    4g5h6i7j8k9l    Password_Records.xlsx 192.168.1.14 Success
+2025-02-14 10:05     cgarcia   IT_Security Accessed      1005   David Park   david.park@opq.com    7z8x9y1w2v3u         Client_Info.docx 192.168.1.15 Success
+
+**Suspicious Activity (Multiple Failed Logins):**
+
+       Timestamp Employee_ID Employee_Role Action Client_ID Client_Name Client_Email Hashed_Password File_Accessed   IP_Address Status
+2025-02-14 09:10      mbrown    IT_Support  Login         -           -            -               -             - 192.168.1.12 Failed
+2025-02-14 09:15      mbrown    IT_Support  Login         -           -            -               -             - 192.168.1.12 Failed
+
+==== END OF REPORT ====
